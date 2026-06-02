@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.venv/
+venv/
+
+# GIS
+*.shp
+*.dbf
+*.shx
+*.prj
+*.cpg
+
+# Outputs
+outputs/
+
+# Large data files
+data/raw/ 
