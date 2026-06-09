@@ -71,4 +71,40 @@ def find_possible_duplicates(stores_gdf, distance_threshold=50, target_crs=26911
 
     return review_table
 
-        
+
+
+# Clean store data,
+# after reviewing manually 
+def clean_grocery_stores(stores_gdf):
+    gdf = stores_gdf.copy()
+
+    # Remove bad records
+    exclude_names = [
+        "Lake Village Farmers Market",
+        "Luxury Homes | North Idaho"
+    ]
+    gdf = gdf[~gdf["name"].isin(exclude_names)]
+
+    # Standardize names
+    gdf.loc[
+        gdf["name"] == "Super 1 Foods",
+        "name"
+    ] = "Super One Foods"
+
+    gdf.loc[
+        gdf["name"] == "Super 1 Foods Rathdrum",
+        ["name", "addr:city"]
+    ] = [
+        "Super One Foods",
+        "Rathdrum"
+    ]
+
+    gdf.loc[
+        gdf["name"] == "Super One Foods - Athol",
+        ["name", "addr:city"]
+    ] = [
+        "Super One Foods",
+        "Athol"
+    ]
+
+    return gdf
