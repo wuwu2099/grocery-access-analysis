@@ -33,7 +33,8 @@ Kootenai County is located in northern Idaho and contains a mix of urban, suburb
 ### Step 1: Store Collection and Cleaning
 Grocery store locations were downloaded from OpenStreetMap using OSMnx. The dataset was reviewed to remove duplicate records, verify store classifications, and standardize store names.
 
-store table + store map
+![Grocery Stores Table](outputs/all_stores_table.png)
+![Grocery Stores Map](outputs/all_stores_map.png)
 
 ### Step 2: Network Preparation
 A drivable road network was downloaded from OpenStreetMap and converted into a graph structure suitable for network analysis. Each grocery store was connected to the nearest network node to enable travel-time calculations.
