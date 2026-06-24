@@ -115,7 +115,7 @@ grocery_stores_access/
 ├── src/
 │
 ├── README.md
-└── requirements.txt
+└── environment.yml
 ```
     
 
