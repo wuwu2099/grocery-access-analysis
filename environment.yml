@@ -1,0 +1,29 @@
+name: grocery-accessibility-analysis
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+
+  # core data stack
+  - numpy
+  - pandas
+
+
+  # GIS stack
+  - geopandas
+  - shapely
+  - osmnx
+  - networkx
+
+  # visualization
+  - matplotlib
+  - adjusttext
+
+  # notebooks
+  - jupyter
+  - ipykernel
+  - ipywidgets
+
+  # pip 
+  - pip
