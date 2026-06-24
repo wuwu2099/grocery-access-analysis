@@ -1,0 +1,8 @@
+pandas
+geopandas
+matplotlib
+shapely
+ipywidgets
+osmnx
+networkx
+adjustText
