@@ -17,8 +17,6 @@ venv/
 *.prj
 *.cpg
 
-# Outputs
-outputs/
 
 # Large data files
 data/raw/ 
